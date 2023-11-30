@@ -11,7 +11,23 @@
 
 </head>
 
+<body  onload="setValues()">
+    <label class="input-group-text" for="city">city</label>
+    <input class="form-control" type="text" placeholder="city" id="city" name="city">
+    <label class="input-group-text" for="street">street</label>
+    <input class="form-control" type="text" placeholder="street" id="street" name="street">
+    <label class="input-group-text" for="phone">phone</label>
+    <input class="form-control" type="text" placeholder="phone" id="phone" name="phone">
+    <label class="input-group-text" for="opening_hours">opening hours</label>
+    <input class="form-control" type="text" placeholder="opening hours" id="opening_hours" name="opening_hours">
+    <label class="input-group-text" for="email">email</label>
+    <input class="form-control" type="email" placeholder="email" id="email" name="email">
+    <input style="display: none;" id="id">
 
+    <button type="button" class="btn btn-primary btn-sm" onclick="update_branch()">update</button>
+
+
+</body>
 
 <script>
     function update_branch() {
